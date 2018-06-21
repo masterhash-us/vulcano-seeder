@@ -60,7 +60,7 @@ class CDataStream;
 class CAutoFile;
 static const unsigned int MAX_SIZE = 0x02000000;
 
-static const int PROTOCOL_VERSION = 70820; // Avoid rejection.
+static const int PROTOCOL_VERSION = 70830; // Avoid rejection.
 
 // Used to bypass the rule against non-const reference to temporary
 // where it makes sense with wrappers such as CFlatData or CTxDB

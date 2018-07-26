@@ -1,7 +1,7 @@
 FROM alpine:3.3
-MAINTAINER Bulwark <support@bulwarkcrypto.com>
+MAINTAINER Vulcano <support@vulcanocrypto.com>
 
-RUN mkdir -p /app/bin /app/src /var/lib/bulwark-seeder
+RUN mkdir -p /app/bin /app/src /var/lib/vulcano-seeder
 
 WORKDIR /app/src
 
@@ -26,8 +26,8 @@ RUN apk --no-cache add    \
       libgcc              \
       libstdc++
 
-WORKDIR /var/lib/bulwark-seeder
-VOLUME /var/lib/bulwark-seeder
+WORKDIR /var/lib/vulcano-seeder
+VOLUME /var/lib/vulcano-seeder
 
 EXPOSE 53/udp
 

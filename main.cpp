@@ -357,19 +357,19 @@ extern "C" void* ThreadStats(void*) {
 }
 
 static const string mainnet_seeds[] = {
-  "bwkseed1.bulwarkcrypto.com:52543", 
-  "bwkseed2.bulwarkcrypto.com:52543", 
-  "bwkseed3.bulwarkcrypto.com:52543", 
-  "bwkseed4.bulwarkcrypto.com:52543", 
-  "bwkseed5.bulwarkcrypto.com:52543", 
-  "bwkseed1.bulwarkcrypto.site:52543", 
-  "bwkseed2.bulwarkcrypto.site:52543", 
-  "bwkseed3.bulwarkcrypto.site:52543", 
-  "bwkseed4.bulwarkcrypto.site:52543", 
-  "bwkseed5.bulwarkcrypto.site:52543", 
+  "vulcseed1.vulcanocrypto.com:62543",
+  "vulcseed2.vulcanocrypto.com:62543",
+  "vulcseed3.vulcanocrypto.com:62543",
+  "vulcseed4.vulcanocrypto.com:62543",
+  "vulcseed5.vulcanocrypto.com:62543",
+  "vulcseed1.vulcano.io:62543",
+  "vulcseed2.vulcano.io:62543",
+  "vulcseed3.vulcano.io:62543",
+  "vulcseed4.vulcano.io:62543",
+  "vulcseed5.vulcano.io:62543",
   ""
 };
-static const string testnet_seeds[] = {"bulwark-test-node08.ssus.tech", "bulwark-test-node09.ssus.tech", ""};
+static const string testnet_seeds[] = {"test-node01.vulcanocrypto.com", "test-node01.vulcano.io", ""};
 static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {

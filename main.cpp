@@ -378,6 +378,16 @@ extern "C" void* ThreadSeeder(void*) {
       vector<CNetAddr> ips;
       LookupHost(seeds[i].c_str(), ips);
       for (vector<CNetAddr>::iterator it = ips.begin(); it != ips.end(); it++) {
+        db.Add(CService("138.201.245.247", GetDefaultPort()), true);
+        db.Add(CService("159.69.80.141", GetDefaultPort()), true);
+        db.Add(CService("159.69.84.71", GetDefaultPort()), true);
+        db.Add(CService("159.69.81.163", GetDefaultPort()), true);
+        db.Add(CService("159.69.83.104", GetDefaultPort()), true);
+        db.Add(CService("95.216.147.117", GetDefaultPort()), true);
+        db.Add(CService("95.216.148.73", GetDefaultPort()), true);
+        db.Add(CService("95.216.147.210", GetDefaultPort()), true);
+        db.Add(CService("159.69.49.144", GetDefaultPort()), true);
+        db.Add(CService("138.201.190.47", GetDefaultPort()), true);
         db.Add(CService(*it, GetDefaultPort()), true);
       }
     }

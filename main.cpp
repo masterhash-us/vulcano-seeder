@@ -33,7 +33,7 @@ public:
   CDnsSeedOpts() : nThreads(96), nDnsThreads(4), nPort(53), mbox(NULL), ns(NULL), host(NULL), tor(NULL), fUseTestNet(false), fWipeBan(false), fWipeIgnore(false), ipv4_proxy(NULL), ipv6_proxy(NULL) {}
 
   void ParseCommandLine(int argc, char **argv) {
-    static const char *help = "Darkcoin-seeder\n"
+    static const char *help = "Vulcanocoin-seeder\n"
                               "Usage: %s -h <host> -n <ns> [-m <mbox>] [-t <threads>] [-p <port>]\n"
                               "\n"
                               "Options:\n"
@@ -357,16 +357,16 @@ extern "C" void* ThreadStats(void*) {
 }
 
 static const string mainnet_seeds[] = {
-  "vulcseed1.vulcano.io:62543",
-  "vulcseed2.vulcano.io:62543",
-  "vulcseed3.vulcano.io:62543",
-  "vulcseed4.vulcano.io:62543",
-  "vulcseed5.vulcano.io:62543",
-  "vulcseed1.vulcanocrypto.com:62543",
-  "vulcseed2.vulcanocrypto.com:62543",
-  "vulcseed3.vulcanocrypto.com:62543",
-  "vulcseed4.vulcanocrypto.com:62543",
-  "vulcseed5.vulcanocrypto.com:62543",
+  "138.201.245.247:62543",
+  "159.69.80.141:62543",
+  "159.69.84.71:62543",
+  "159.69.81.163:62543",
+  "159.69.83.104:62543",
+  "95.216.147.117:62543",
+  "95.216.148.73:62543",
+  "95.216.147.210:62543",
+  "159.69.49.144:62543",
+  "138.201.190.47:62543",
   ""
 };
 static const string testnet_seeds[] = {"test-node01.vulcanocrypto.com", "test-node01.vulcano.io", ""};
